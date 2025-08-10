@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="icon">
+        📈
+    </div>
+    <h2 class="title">Currency Converter</h2>
+    <p class="subtitle">Get real-time exchange rates</p>
+
+    <div class="row">
+        <label>From</label>
+        <div class="input-group">
+            <div class="select-wrapper">
+                <img id="fromFlag" src="" alt="flag">
+                <select id="fromCurrency"></select>
+            </div>
+            <input type="number" id="fromAmount" value="1">
+        </div>
+    </div>
+
+    <div class="swap" id="swapBtn">⇅</div>
+
+    <div class="row">
+        <label>To</label>
+        <div class="input-group">
+            <div class="select-wrapper">
+                <img id="toFlag" src="" alt="flag">
+                <select id="toCurrency"></select>
+            </div>
+            <input type="text" id="toAmount" readonly>
+        </div>
+    </div>
+
+    <button id="convertBtn">Convert Currency</button>
+
+    <div class="result" id="resultBox"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
